@@ -7,12 +7,10 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  html {
-    font-size: 625%;
-  }
   body {
-    font-size: 0.16rem;
+    font-size: 16px;
     background-color: #f2f3f4;
+    min-width: 982px;
   }
   ol, ul {
 		list-style: none;

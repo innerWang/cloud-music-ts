@@ -1,14 +1,19 @@
 import 'assets/iconfont/symbol';
 import { GlobalStyle } from './style';
-import { IconStyle, SvgIcon } from 'assets/iconfont';
+import { IconStyle } from 'assets/iconfont';
+
+import { renderRoutes } from 'react-router-config';
+import { HashRouter } from 'react-router-dom';
+
+import routes from 'routes';
 
 function App() {
   return (
-    <div className="App">
+    <HashRouter>
       <GlobalStyle />
       <IconStyle />
-      <SvgIcon type="search" />
-    </div>
+      {renderRoutes(routes)}
+    </HashRouter>
   );
 }
 
