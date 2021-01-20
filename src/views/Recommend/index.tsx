@@ -1,6 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import { useMobxStore } from 'store';
+import Slider from 'components/Slider';
 
 const Recommend = () => {
   const store = useMobxStore();
@@ -9,15 +10,9 @@ const Recommend = () => {
     store.recommend.fetchBanner();
   }, [store.recommend]);
 
-  console.log('render ...');
-
   return (
     <div>
-      {store.recommend.list.map((t) => (
-        <div key={t.encodeId}>
-          <img src={t.imageUrl} alt={t.imageUrl} />
-        </div>
-      ))}
+      <Slider slides={store.recommend.list} />
     </div>
   );
 };

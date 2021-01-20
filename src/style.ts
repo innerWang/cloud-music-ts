@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     font-size: 16px;
-    background-color: #f2f3f4;
-    min-width: 982px;
+    background-color: #f5f5f5;
+    min-width: 980px;
   }
   ol, ul {
 		list-style: none;

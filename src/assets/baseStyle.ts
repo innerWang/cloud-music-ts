@@ -42,6 +42,7 @@ export default {
   'lighter-theme-color': '#c20c0c',
   'dark-bg-color': '#242424',
   'color-grey': '#c5c5c5',
+  'main-width': '980px',
   extendClick,
   singleLineOmission,
   centeredBg,
